@@ -1,0 +1,15 @@
+1. 不使用virtual, 如何模拟出其多态效果？
+
+2. 如何获得成员函数的地址？
+
+3. 如何根据获得的成员函数地址，对其进行调用？
+
+4. http://www.vckbase.com/index.php/wv/1514  直接调用类成员函数地址
+
+/* C++(不用virtual)模拟虚函数来表现出多态性：
+写一基类Person, 有sayHello，sayGoodbye函数
+有一子类Student, 它也有自己的sayHello, sayGoodbye函数
+  
+请在这两个类里加入函数vsayHello, vsayGoodbye函数
+来表现出对象的多态性(分别调用自己的对应的sayHello和sayGoodbye)
+*/
